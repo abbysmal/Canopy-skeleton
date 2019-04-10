@@ -1,0 +1,13 @@
+<div class="post">
+    <h2>{{title}}</h2>
+    {{#author_uri}}
+        <a class="author" href="{{author_uri}}">Written by {{author}}</a>
+    {{/author_uri}}
+    {{^author_uri}}
+        <span class="author">Written by {{author}}</a>
+    {{/author_uri}}
+    <br />
+    <span class="date">{{created}} {{updated}}</span>
+    <br />
+    {{content}} 
+</div>
