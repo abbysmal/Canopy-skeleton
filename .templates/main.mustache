@@ -1,5 +1,17 @@
-<html>
-    {{title}}
-    {{site_name}}
-    {{{content}}}
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <head>
+            <title>{{title}}</title>
+            <meta charset="UTF-8"/>
+            <link rel="stylesheet" href="/static/css/style.css"/>
+            <link rel="stylesheet" href="/static/css/highlight.css"/>
+            <script src="/static/js/highlight.pack.js"></script>
+            <script>hljs.initHighlightingOnLoad();</script>
+            <link rel="alternate" href="/atom" title="{{title}}" type="application/atom+xml"/>
+        </head>
+        <body>
+            {{title}}
+            {{site_name}}
+            {{{content}}}
+        </body>
 </html>
