@@ -6,6 +6,11 @@
     {{^author_uri}}
         <span class="author">Written by {{author}}</a>
     {{/author_uri}}
+    <div class="tags">
+        {{#tags}}
+          <a href="{{uri}}" class="{{name}}">mirageos</a>
+        {{/tags}}
+    </div>
     <br />
     <span class="date">{{created}} {{updated}}</span>
     <br />
